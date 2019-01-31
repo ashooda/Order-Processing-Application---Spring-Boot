@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="406.0" maxWidth="600.0" minHeight="397.0" minWidth="481.0" prefHeight="406.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.testingnancy.testingnancy.Controllers.AvgPriceOccasionController">
+    <center>
+        <TableView fx:id="APOTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="OccasionType" prefWidth="75.0" text="OccasionType" />
+                <TableColumn fx:id="ProductTypeID" prefWidth="75.0" text="ProductTypeID" />
+                <TableColumn fx:id="ProductType" prefWidth="75.0" text="ProductType" />
+                <TableColumn fx:id="ProductFrequency" prefWidth="75.0" text="ProductFrequency" />
+                <TableColumn fx:id="AveragePrice" prefWidth="75.0" text="AveragePrice" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </center>
+    <bottom>
+
+    </bottom>
+</BorderPane>

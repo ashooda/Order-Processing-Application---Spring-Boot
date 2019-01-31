@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Assignment</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.AssignmentLine</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.AssignmentStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Country</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Customer</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.CustomerStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.CustomerType</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Employee</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.EmployeeStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.EmployeeType</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Filling</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.FillingStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Flavor</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.FlavorStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Frosting</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.FrostingStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Occasion</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrderFulfillmentMethod</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrderLineStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrderPlacementMethod</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrderStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Orderline</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Orders</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Ornament</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrnamentColor</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrnamentLine</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrnamentSize</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrnamentStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrnamentType</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.ProductLayer</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.ProductType</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Shape</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.ShapeStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.Size</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.SizeStatus</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.StateProvince</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="toplink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="hibernate.connection.url"
+                      value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="openjpa.ConnectionURL"
+                      value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="openjpa.ConnectionDriverName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="eclipselink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="persistenceUnit3">
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.AvgPriceOccasion</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.FillingByQuarter</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.FlavorByYear</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OccasionByYear</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrderPlacementByYear</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrnamentRentalOccasion</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.OrnamentsByYear</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.ProductSizeMonth</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.ProductbyMonth</class>
+        <class>edu.uh.tech.cis3368.testingnancy.testingnancy.Entities.RevByQuarter</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="toplink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="hibernate.connection.url"
+                      value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="openjpa.ConnectionURL"
+                      value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="openjpa.ConnectionDriverName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:sqlserver://172.26.54.45:60344;database=Complete_DB_V_3"/>
+            <property name="eclipselink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        </properties>
+    </persistence-unit>
+</persistence>

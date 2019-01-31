@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="397.0" minWidth="481.0" prefHeight="397.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.testingnancy.testingnancy.Controllers.OrderPlacementByYearController">
+    <center>
+        <TableView fx:id="OPYTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="FirstName" prefWidth="75.0" text="FirstName" />
+                <TableColumn fx:id="LastName" prefWidth="75.0" text="LastName" />
+                <TableColumn fx:id="CustomerID" prefWidth="75.0" text="CustomerID" />
+                <TableColumn fx:id="CustomerStatus" prefWidth="75.0" text="CustomerStatus" />
+				<TableColumn fx:id="CustomerType" prefWidth="75.0" text="CustomerType" />
+				<TableColumn fx:id="OrderPlacementMethod" prefWidth="75.0" text="OrderPlacementMethod" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </center>
+    <bottom>
+
+    </bottom>
+</BorderPane>
+

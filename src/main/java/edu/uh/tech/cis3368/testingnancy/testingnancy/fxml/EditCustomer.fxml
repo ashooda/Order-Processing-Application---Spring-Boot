@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="834.0" prefWidth="675.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.testingnancy.testingnancy.Controllers.EditCustomerController">
+    <children>
+        <VBox layoutX="172.0" layoutY="50.0" prefHeight="728.0" prefWidth="508.0" spacing="10.0" style="-fx-background-color: #F5F5F5;" AnchorPane.leftAnchor="100.0">
+            <children>
+                <HBox id="hboxFName" alignment="BASELINE_LEFT" centerShape="false" prefHeight="50.0" prefWidth="300.0" spacing="50.0" style="-fx-background-color: #F5F5F5 #F5F5F5;">
+                    <children>
+                        <Label maxHeight="17.0" maxWidth="109.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="103.0" text="First Name" textFill="#7a2007">
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <JFXTextField id="txtCustFirst" fx:id="firstNametxt" focusColor="#e3ca3c" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="160.0" unFocusColor="#7a2007">
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin>
+                        </JFXTextField>
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="BASELINE_LEFT" centerShape="false" prefHeight="50.0" prefWidth="300.0" spacing="50.0">
+                    <children>
+                        <Label alignment="BASELINE_LEFT" prefHeight="17.0" prefWidth="103.0" text="Last Name" textFill="#7a2007" />
+                        <JFXTextField id="txtCustLastName" fx:id="lastNametxt" focusColor="#e3ca3c" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="160.0" unFocusColor="#7a2007" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="BASELINE_LEFT" centerShape="false" fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="416.0" spacing="30.0">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                    <children>
+                        <JFXComboBox fx:id="countryCombo" focusColor="#e3ca3c" labelFloat="true" prefHeight="27.0" prefWidth="160.0" promptText="Select the Country" unFocusColor="#7a2007">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin></JFXComboBox>
+                        <JFXComboBox fx:id="stateCombo" focusColor="#e3ca3c" labelFloat="true" prefHeight="26.0" prefWidth="138.0" promptText="Select the State" unFocusColor="#7a2007">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin></JFXComboBox>
+                    </children>
+                </HBox>
+                <HBox alignment="BASELINE_LEFT" centerShape="false" prefHeight="50.0" prefWidth="300.0" spacing="50.0">
+                    <children>
+                        <Label alignment="BASELINE_LEFT" prefWidth="103.0" text="Street" textFill="#7a2007" />
+                        <JFXTextField fx:id="streetTxt" focusColor="#e3ca3c" labelFloat="true" prefHeight="25.0" prefWidth="178.0" unFocusColor="#7a2007" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="BASELINE_LEFT" centerShape="false" prefHeight="50.0" prefWidth="300.0" spacing="50.0">
+                    <children>
+                        <Label alignment="BASELINE_LEFT" prefHeight="17.0" prefWidth="111.0" text="City" textFill="#7a2007" />
+                        <JFXTextField id="txtCustZip" fx:id="cityTxt" focusColor="#e3ca3c" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="102.0" unFocusColor="#7a2007" />
+                        <Label alignment="BASELINE_LEFT" prefHeight="12.0" prefWidth="130.0" text="Zip code" textFill="#7a2007" />
+                        <JFXTextField id="txtCustPhone" fx:id="zipcodeTxt" focusColor="#e3ca3c" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="105.0" unFocusColor="#7a2007" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="BASELINE_LEFT" centerShape="false" fillHeight="false" prefHeight="50.0" prefWidth="300.0" spacing="50.0">
+                    <children>
+                        <Label alignment="BASELINE_LEFT" maxHeight="-Infinity" minWidth="-Infinity" prefWidth="103.0" text="Phone" textFill="#7a2007" />
+                        <JFXTextField id="txtCustEmail" fx:id="phoneTxt" focusColor="#e3ca3c" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="160.0" unFocusColor="#7a2007" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox fillHeight="false" minHeight="49.0" prefHeight="50.0" prefWidth="459.0" spacing="50.0">
+                    <children>
+                        <Label alignment="BASELINE_LEFT" prefHeight="17.0" prefWidth="103.0" text="Email" textFill="#7a2007" />
+                        <JFXTextField fx:id="emailTxt" focusColor="#e3ca3c" labelFloat="true" prefWidth="160.0" unFocusColor="#7a2007" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="300.0" spacing="50.0">
+                    <children>
+                        <JFXComboBox fx:id="custStatCombo" focusColor="#e3ca3c" labelFloat="true" prefHeight="26.0" prefWidth="131.0" promptText="Customer Status" unFocusColor="#7a2007">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin></JFXComboBox>
+                        <JFXComboBox fx:id="custTypeCombo" focusColor="#e3ca3c" labelFloat="true" prefHeight="30.0" prefWidth="131.0" promptText="Customer Type" unFocusColor="#7a2007">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin></JFXComboBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding></HBox>
+                <HBox prefHeight="50.0" prefWidth="300.0" spacing="50.0">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+        <HBox layoutX="245.0" layoutY="756.0" prefHeight="30.0" prefWidth="192.0" spacing="50.0" style="-fx-background-color: #F5F5F5;" AnchorPane.bottomAnchor="14.0">
+            <children>
+                <JFXButton fx:id="custSavebtn" onAction="#buttonEvent" stylesheets="@dashboardcss.css" text="Save" />
+                <JFXButton fx:id="custClearbtn" onAction="#clearButtonEvent" stylesheets="@dashboardcss.css" text="Clear" />
+            </children>
+            <padding>
+                <Insets top="5.0" />
+            </padding>
+        </HBox>
+        <Label layoutX="286.0" layoutY="14.0" prefHeight="41.0" prefWidth="137.0" text="Customer" textAlignment="CENTER" textFill="#7a2007">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
+

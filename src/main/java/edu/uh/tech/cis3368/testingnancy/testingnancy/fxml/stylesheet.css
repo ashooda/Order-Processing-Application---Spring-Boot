@@ -1,0 +1,22 @@
+.button {
+
+    -fx-border-color: #E3CA3C;
+    -fx-background-color: #F5F5F5;
+
+    -fx-font-size: 12pt;
+    -fx-text-fill: #7A2007 ;
+}
+
+.button:hover, .button:focused{
+
+    -fx-background-color: derive(#E3CA3C, 40%);}
+
+#HomePane {
+
+    -fx-background-image: url(/icons/nancys-cakes-large.jpg);
+    -fx-width: 100%;
+    -fx-background-position: absolute;
+    -fx-tab-max-height: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}

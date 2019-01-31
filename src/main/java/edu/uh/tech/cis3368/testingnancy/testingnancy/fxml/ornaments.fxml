@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.testingnancy.testingnancy.Controllers.Controller">
+    <children>
+      <Group layoutX="16.0" layoutY="10.0">
+         <children>
+            <VBox fx:id="box" layoutX="300.0" layoutY="125.0" style="-fx-border-color: gold;">
+               <children>
+                  <Group>
+                     <children>
+                                  <ChoiceBox fx:id="flavors1" centerShape="false" layoutY="25.0" prefWidth="175.0" scaleShape="false" snapToPixel="false">
+                                      <items>
+                                          <FXCollections fx:factory="observableArrayList">
+                                              <String fx:value="Vanilla" />
+                                              <String fx:value="Chocolate" />
+                                              <String fx:value="Marble" />
+                                              <String fx:value="Strawberry" />
+                                              <String fx:value="Almond/Chocolate" />
+                                              <String fx:value="Pineapple" />
+                                              <String fx:value="Tres Leches" />
+                                              <String fx:value="White" />
+                                              <String fx:value="Almond" />
+                                              <String fx:value="Red Velvet" />
+                                              <String fx:value="Coconut" />
+                                              <String fx:value="Lemon" />
+                                              <String fx:value="Pecan" />
+                                          </FXCollections>
+                                      </items>
+                                  </ChoiceBox>
+                        <TextField layoutX="240.0" layoutY="25.0" prefWidth="100.0" />
+                     </children>
+                  </Group>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+                      <Label alignment="CENTER" layoutX="540.0" layoutY="90.0" prefHeight="35.0" prefWidth="119.0" text="Quantity" underline="true">
+                          <font>
+                              <Font size="24.0" />
+                          </font>
+                      </Label>
+                      <Label alignment="CENTER" layoutX="340.0" layoutY="90.0" text="Ornament" underline="true">
+                          <font>
+                              <Font size="24.0" />
+                          </font>
+                      </Label>
+         </children>
+      </Group>
+          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="40.0">
+              <image>
+                  <Image url="@icons/NancysLogo.png" />
+              </image>
+          </ImageView>
+       <JFXButton fx:id="addorn" layoutX="780.0" layoutY="102.0" mnemonicParsing="false" onAction="#newOrnament" stylesheets="@stylesheet.css" text="+" />
+       <JFXButton fx:id="delorn" layoutX="780.0" layoutY="142.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minOrn" prefHeight="39.0" prefWidth="35.0" stylesheets="@stylesheet.css" text="-" />
+    </children>
+</AnchorPane>

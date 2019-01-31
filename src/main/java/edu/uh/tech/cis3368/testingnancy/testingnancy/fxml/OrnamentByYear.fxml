@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="397.0" minWidth="481.0" prefHeight="397.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.testingnancy.testingnancy.Controllers.OrnamentsByYearController">
+    <center>
+        <TableView fx:id="OBYTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="OrderID" prefWidth="75.0" text="OrderID" />
+                <TableColumn fx:id="FirstName" prefWidth="75.0" text="FirstName" />
+				<TableColumn fx:id="LastName" prefWidth="75.0" text="LastName" />
+				<TableColumn fx:id="OrnamentID" prefWidth="75.0" text="OrnamentID" />
+				<TableColumn fx:id="OrnamentType" prefWidth="75.0" text="OrnamentType" />
+				<TableColumn fx:id="OrnamentColor" prefWidth="75.0" text="OrnamentColor" />
+				<TableColumn fx:id="OrnamentSize" prefWidth="75.0" text="OrnamentSize" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </center>
+    <bottom>
+
+    </bottom>
+</BorderPane>
+
